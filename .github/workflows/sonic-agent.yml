@@ -14,4 +14,4 @@ jobs:
       - name: build docker image
         run: docker build -f sonic-agent/Dockerfile -t zhuozhuang/sonic-agent-linux-base:v1.0.2 .
       - name: push docker image
-        run: docker push sonicorg/sonic-agent-linux-base:v1.0.2
+        run: docker push zhuozhuang/sonic-agent-linux-base:v1.0.2
