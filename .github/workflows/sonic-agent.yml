@@ -10,8 +10,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: login docker hub
-        run: echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u zhouyixun --password-stdin
+        run: echo "${{ secrets.ACCESS_TOKEN }}" | docker login -u zhuozhuang --password-stdin
       - name: build docker image
-        run: docker build -f sonic-agent/Dockerfile -t sonicorg/sonic-agent-linux-base:v1.0.2 .
+        run: docker build -f sonic-agent/Dockerfile -t zhuozhuang/sonic-agent-linux-base:v1.0.2 .
       - name: push docker image
         run: docker push sonicorg/sonic-agent-linux-base:v1.0.2
